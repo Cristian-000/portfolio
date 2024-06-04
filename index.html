@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio de Cristian Fernandez</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <!-- Enlace a Font Awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -68,24 +71,57 @@
     </section>
 
     <!-- Sección de Certificados -->
-    <section id="certificates" class="container mt-5">
-        <h2 class="text-center">Certificados</h2>
-        <div class="row">
-            <!-- Ejemplo de certificado -->
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">IBM Full Stack</h5>
-                        <embed src="img/certificados/IBM-FullStack.pdf#toolbar=0&navpanes=0" type="application/pdf" width="100%" height="220px"/>
-
-                        <p>Descripción del certificado.</p>
-                        <a href="https://www.coursera.org/account/accomplishments/professional-cert/BAZ55RF7MV88" target="_blank">Verificar en Coursera.org</a>
+<section id="certificates" class="container mt-5">
+    <h2 class="text-center">Certificados</h2>
+    <div class="row">
+        <!-- Ejemplo de certificado -->
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body position-relative">
+                    <h5 class="card-title">IBM Full Stack</h5>
+                    <div class="img-container">
+                        <img src="img/certificados/null.jpg" alt="Certificado de IBM, aptitud Full Stack, Cristian Fernandez" width="100%" height="220px"/>
+                        <button class="btn btn-primary btn-overlay" data-toggle="modal" data-target="#imageModal">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
+                    </div>
+                    <p class="p-1">Obtenido el 03/2024 en la plataforma Coursera.org con licencia otorgada por CEIBAL.</p>
+                    <p class="p-1">Verificar en <a href="https://www.coursera.org/account/accomplishments/professional-cert/BAZ55RF7MV88" target="_blank">Coursera.org</a></p>
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#data-cert-1" aria-expanded="false" aria-controls="project1">
+                        Conceptos estudiados <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="collapse" id="data-cert-1">
+                        <div class="card card-body">
+                            <p class="p-2">HTML, CSS, JavaScript, GitHub,
+                                Node.js, React, conceptos de Cloud Native, DevOps, CI/CD, Containers,
+                                Docker, Kubernetes, OpenShift, Python, Databases, SQL,
+                                NoSQL, Django ORM, Bootstrap, Seguridad en aplicaciones, Microservicios,
+                                Computación Serverless, entre otras..</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Repite la estructura para más certificados -->
         </div>
-    </section>
+        <!-- Repite la estructura para más certificados -->
+    </div>
+</section>
+
+<!-- Modal de Imagen -->
+<div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="imageModalLabel">Certificado IBM Full Stack</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="img/certificados/null.jpg" alt="Certificado de IBM, aptitud Full Stack, Cristian Fernandez" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
 
     <!-- Sección de Contacto -->
     <section id="contact" class="container mt-5">
@@ -101,5 +137,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="scripts.js"></script>
+   
+
 </body>
 </html>
