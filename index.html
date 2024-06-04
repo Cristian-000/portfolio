@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Cristian Fernandez</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Cristian Fernandez</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Sobre Mí</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#certificates">Certificados</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sección de Presentación -->
+    <section id="about" class="container mt-5">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Hola, soy Cristian Fernandez</h1>
+                <p>Desarrollador Web Full Stack JR especializado en el stack MERN.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Proyectos -->
+    <section id="projects" class="container mt-5">
+        <h2 class="text-center">Proyectos</h2>
+        <div class="row">
+            <!-- Ejemplo de tarjeta de proyecto -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 1</h5>
+                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#project1" aria-expanded="false" aria-controls="project1">
+                            Ver más
+                        </button>
+                        <div class="collapse" id="project1">
+                            <div class="card card-body">
+                                Descripción del proyecto.
+                                <a href="https://github.com/tuusuario/proyecto1" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Repite la estructura para más proyectos -->
+        </div>
+    </section>
+
+    <!-- Sección de Certificados -->
+    <section id="certificates" class="container mt-5">
+        <h2 class="text-center">Certificados</h2>
+        <div class="row">
+            <!-- Ejemplo de certificado -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Certificado 1</h5>
+                        <p>Descripción del certificado.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Repite la estructura para más certificados -->
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contact" class="container mt-5">
+        <h2 class="text-center">Contacto</h2>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>Puedes contactarme a través de mi correo: <a href="mailto:tuemail@example.com">tuemail@example.com</a></p>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
