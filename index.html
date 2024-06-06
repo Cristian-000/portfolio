@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Enlace a Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <!-- Navegación -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Cristian Fernandez</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#">
+            <img src="img/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-top">
+            Cristian Fernandez
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -45,7 +46,7 @@
                 <h1>Hola, soy Cristian</h1>
                 <p>Desarrollador Web Full Stack JR especializado en el stack MERN,
                     con conocimientos en Ciberseguridad y Gestión de Proyectos.</p>
-                <p>Conozco y aplico las mejores habilidades blandas para un exelente trabajo en equipo.</p>
+                <p>Conozco y aplico las mejores habilidades blandas para un excelente trabajo en equipo.</p>
             </div>
         </div>
     </section>
@@ -56,11 +57,10 @@
         <div class="row">
             <!-- Ejemplo de tarjeta de proyecto -->
             <div class="col-md-4">
-                <div class="card mb-4">
+                <div class="card mb-4 shadow-sm">
                     <div class="card-body">
                         <h5 class="card-title">Proyecto 1</h5>
-                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#project1"
-                            aria-expanded="false" aria-controls="project1">
+                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#project1" aria-expanded="false" aria-controls="project1">
                             Ver más
                         </button>
                         <div class="collapse" id="project1">
@@ -76,118 +76,220 @@
         </div>
     </section>
 
-    <!-- Sección de Certificados -->
-    <section id="certificates" class="container mt-5">
-        <h2 class="text-center">Certificados</h2>
-        <div class="row">
-            <!-- Certificado 1 IBM fs -->
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-body position-relative">
-                        <h5 class="card-title">IBM Full Stack</h5>
-                        <div class="img-container">
-                            <img src="img/certificados/IBM-FullStack.png"
-                                alt="Certificado de IBM, aptitud Full Stack, Cristian Fernandez" width="100%"
-                                height="220px" />
-                            <button class="btn btn-primary btn-overlay" data-toggle="modal" data-target="#imageModal">
-                                <i class="fas fa-search-plus"></i>
-                            </button>
-                        </div>
-                        <p class="p-1">Obtenido el 03/2024 en la plataforma Coursera.org con licencia otorgada por
-                            CEIBAL.</p>
-                        <p class="p-1">Verificar en <a
-                                href="https://www.coursera.org/account/accomplishments/professional-cert/BAZ55RF7MV88"
-                                target="_blank">Coursera.org</a></p>
-                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#data-cert-1"
-                            aria-expanded="false" aria-controls="project1">
-                            Conceptos estudiados <i class="fas fa-chevron-down"></i>
+   <!-- Sección de Certificados -->
+<section id="certificates" class="container mt-5">
+    <h2 class="text-center">Certificados</h2>
+    <div class="row">
+        <!-- Certificado 1 IBM fs -->
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-body position-relative">
+                    <h5 class="card-title">IBM Full Stack</h5>
+                    <div class="img-container">
+                        <img src="img/certificados/IBM-FullStack.png" alt="Certificado de IBM, aptitud Full Stack, Cristian Fernandez" width="100%" height="220px" />
+                        <button class="btn btn-primary btn-overlay" data-toggle="modal" data-target="#imageModal">
+                            <i class="fas fa-search-plus"></i>
                         </button>
-                        <div class="collapse" id="data-cert-1">
-                            <div class="card card-body">
-                                <p class="p-2">HTML, CSS, JavaScript, GitHub,
-                                    Node.js, React, conceptos de Cloud Native, DevOps, CI/CD, Containers,
-                                    Docker, Kubernetes, OpenShift, Python, Databases, SQL,
-                                    NoSQL, Django ORM, Bootstrap, Seguridad en aplicaciones, Microservicios,
-                                    Computación Serverless, entre otras..</p>
-                            </div>
+                    </div>
+                    <p class="p-1">Obtenido el 03/2024 en la plataforma Coursera.org con licencia otorgada por CEIBAL.</p>
+                    <p class="p-1">Verificar en <a href="https://www.coursera.org/account/accomplishments/professional-cert/BAZ55RF7MV88" target="_blank">Coursera.org</a></p>
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#data-cert-1" aria-expanded="false" aria-controls="data-cert-1">
+                        Conceptos estudiados <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="collapse" id="data-cert-1">
+                        <div class="card card-body">
+                            <p class="p-2">HTML, CSS, JavaScript, GitHub, Node.js, React, conceptos de Cloud Native, DevOps, CI/CD, Containers, Docker, Kubernetes, OpenShift, Python, Databases, SQL, NoSQL, Django ORM, Bootstrap, Seguridad en aplicaciones, Microservicios, Computación Serverless, entre otras..</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Certificado 2 Meta fe -->
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-body position-relative">
-                        <h5 class="card-title">Meta Front-End</h5>
-                        <div class="img-container">
-                            <img src="img/certificados/Meta-FtontEnd.png"
-                                alt="Certificado de META, aptitud Front-End, Cristian Fernandez" width="100%"
-                                height="220px" />
-                            <button class="btn btn-primary btn-overlay" data-toggle="modal" data-target="#imageModal2">
-                                <i class="fas fa-search-plus"></i>
-                            </button>
-                        </div>
-                        <p class="p-1">Obtenido el 09/2023 en la plataforma Coursera.org con licencia otorgada por
-                            INEFOP</p>
-                        <p class="p-1">Verificar en <a
-                                href="https://www.coursera.org/account/accomplishments/professional-cert/B3H3HYGPEK22"
-                                target="_blank">Coursera.org</a></p>
-                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#data-cert-2"
-                            aria-expanded="false" aria-controls="project1">
-                            Conceptos estudiados <i class="fas fa-chevron-down"></i>
-                        </button>
-                        <div class="collapse" id="data-cert-2">
-                            <div class="card card-body">
-                                <p class="p-2">HTML5 y CSS3 en profundidad, JavaScript, React avanzado, Git, GitHub,
-                                    Principios de diseño UX/UI, entre otros..</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Certificado 3 CiberS Google -->
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-body position-relative">
-                        <h5 class="card-title">Google Ciberseguridad</h5>
-                        <div class="img-container">
-                            <img src="img/certificados/Google-CS.png"
-                                alt="Certificado de Google, aptitud Ciberseguridad, Cristian Fernandez" width="100%"
-                                height="220px" />
-                            <button class="btn btn-primary btn-overlay" data-toggle="modal" data-target="#imageModal3">
-                                <i class="fas fa-search-plus"></i>
-                            </button>
-                        </div>
-                        <p class="p-1">Obtenido el 05/2024 en la plataforma Coursera.org con licencia otorgada por
-                            CEIBAL</p>
-                        <p class="p-1">Verificar en <a href="https://coursera.org/verify/professional-cert/RSGU75KWBTXK"
-                                target="_blank">Coursera.org</a></p>
-                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#data-cert-3"
-                            aria-expanded="false" aria-controls="project1">
-                            Conceptos estudiados <i class="fas fa-chevron-down"></i>
-                        </button>
-                        <div class="collapse" id="data-cert-3">
-                            <div class="card card-body">
-                                <p class="p-2">Automatización de las tareas de ciberseguridad con Python,
-                                    Fundamentos de la ciberseguridad,
-                                    Activos, amenazas y vulnerabilidades,
-                                    Conexión y protección: Redes y seguridad de redes,
-                                    Gestion de los riesgos de seguridad,
-                                    Detección y respuesta,
-                                    Herramientas del oficio: Linux y SQL, entre otros..</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Repite la estructura para más certificados -->
         </div>
-    </section>
+        <!-- Certificado 2 Meta fe -->
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-body position-relative">
+                    <h5 class="card-title">Meta Front-End</h5>
+                    <div class="img-container">
+                        <img src="img/certificados/Meta-FtontEnd.png" alt="Certificado de META, aptitud Front-End, Cristian Fernandez" width="100%" height="220px" />
+                        <button class="btn btn-primary btn-overlay" data-toggle="modal" data-target="#imageModal2">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
+                    </div>
+                    <p class="p-1">Obtenido el 09/2023 en la plataforma Coursera.org con licencia otorgada por INEFOP</p>
+                    <p class="p-1">Verificar en <a href="https://www.coursera.org/account/accomplishments/professional-cert/B3H3HYGPEK22" target="_blank">Coursera.org</a></p>
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#data-cert-2" aria-expanded="false" aria-controls="data-cert-2">
+                        Conceptos estudiados <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="collapse" id="data-cert-2">
+                        <div class="card card-body">
+                            <p class="p-2">HTML5 y CSS3 en profundidad, JavaScript, React avanzado, Git, GitHub, Principios de diseño UX/UI, entre otros..</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Certificado 3 CiberS Google -->
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-body position-relative">
+                    <h5 class="card-title">Google Ciberseguridad</h5>
+                    <div class="img-container">
+                        <img src="img/certificados/Google-CS.png" alt="Certificado de Google, aptitud Ciberseguridad, Cristian Fernandez" width="100%" height="220px" />
+                        <button class="btn btn-primary btn-overlay" data-toggle="modal" data-target="#imageModal3">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
+                    </div>
+                    <p class="p-1">Obtenido el 05/2024 en la plataforma Coursera.org con licencia otorgada por CEIBAL</p>
+                    <p class="p-1">Verificar en <a href="https://coursera.org/verify/professional-cert/RSGU75KWBTXK" target="_blank">Coursera.org</a></p>
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#data-cert-3" aria-expanded="false" aria-controls="data-cert-3">
+                        Conceptos estudiados <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="collapse" id="data-cert-3">
+                        <div class="card card-body">
+                            <p class="p-2">Automatización de las tareas de ciberseguridad con Python, Fundamentos de la ciberseguridad, Activos, amenazas y vulnerabilidades, Conexión y protección: Redes y seguridad de redes, Gestión de los riesgos de seguridad, Detección y respuesta, Herramientas del oficio: Linux y SQL, entre otros..</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Botón para ver más certificados -->
+    <div class="text-center mt-4">
+        <button class="btn btn-primary btn-block" type="button" data-toggle="collapse" data-target="#moreCertificates" aria-expanded="false" aria-controls="moreCertificates">
+            Ver más <i class="fas fa-chevron-down"></i>
+        </button>
+    </div>
+    <!-- Certificados adicionales ocultos -->
+    <div class="collapse mt-4" id="moreCertificates">
+        <div class="row">
+            <!-- Certificado adicional 1 -->
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body position-relative">
+                        <h5 class="card-title">Certificado Adicional 1</h5>
+                        <div class="img-container">
+                            <img src="img/certificados/certificado-adicional-1.png" alt="Certificado adicional 1" width="100%" height="220px" />
+                            <button class="btn btn-primary btn-overlay" data-toggle="modal" data-target="#imageModal4">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                        <p class="p-1">Descripción del certificado adicional 1.</p>
+                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#data-cert-ad-1" aria-expanded="false" aria-controls="data-cert-ad-1">
+                            Conceptos estudiados <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="collapse" id="data-cert-ad-1">
+                            <div class="card card-body">
+                                <p class="p-2">Detalles del certificado adicional 1.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Certificado adicional 2 -->
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body position-relative">
+                        <h5 class="card-title">Certificado Adicional 2</h5>
+                        <div class="img-container">
+                            <img src="img/certificados/certificado-adicional-2.png" alt="Certificado adicional 2" width="100%" height="220px" />
+                            <button class="btn btn-primary btn-overlay" data-toggle="modal" data-target="#imageModal5">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                        <p class="p-1">Descripción del certificado adicional 2.</p>
+                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#data-cert-ad-2" aria-expanded="false" aria-controls="data-cert-ad-2">
+                            Conceptos estudiados <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="collapse" id="data-cert-ad-2">
+                            <div class="card card-body">
+                                <p class="p-2">Detalles del certificado adicional 2.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Certificado adicional 3 -->
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body position-relative">
+                        <h5 class="card-title">Certificado Adicional 3</h5>
+                        <div class="img-container">
+                            <img src="img/certificados/certificado-adicional-3.png" alt="Certificado adicional 3" width="100%" height="220px" />
+                            <button class="btn btn-primary btn-overlay" data-toggle="modal" data-target="#imageModal6">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                        <p class="p-1">Descripción del certificado adicional 3.</p>
+                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#data-cert-ad-3" aria-expanded="false" aria-controls="data-cert-ad-3">
+                            Conceptos estudiados <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="collapse" id="data-cert-ad-3">
+                            <div class="card card-body">
+                                <p class="p-2">Detalles del certificado adicional 3.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal de Certificado adicional 1 -->
+<div class="modal fade" id="imageModal4" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="imageModalLabel">Certificado Adicional 1</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="img/certificados/certificado-adicional-1.png" alt="Certificado adicional 1" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal de Certificado adicional 2 -->
+<div class="modal fade" id="imageModal5" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="imageModalLabel">Certificado Adicional 2</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="img/certificados/certificado-adicional-2.png" alt="Certificado adicional 2" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal de Certificado adicional 3 -->
+<div class="modal fade" id="imageModal6" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="imageModalLabel">Certificado Adicional 3</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="img/certificados/certificado-adicional-3.png" alt="Certificado adicional 3" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+
 
     <!-- Modal de Imagen -->
     <!-- Modal de Certificado 1 IBM fs -->
-    <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel"
-        aria-hidden="true">
+    <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -197,33 +299,29 @@
                     </button>
                 </div>
                 <div class="modal-body text-center">
-                    <img src="img/certificados/IBM-FullStack.png"
-                        alt="Certificado de IBM, aptitud Full Stack, Cristian Fernandez" class="img-fluid">
+                    <img src="img/certificados/IBM-FullStack.png" alt="Certificado de IBM, aptitud Full Stack, Cristian Fernandez" class="img-fluid">
                 </div>
             </div>
         </div>
     </div>
     <!-- Modal de Certificado 2 Meta fe-->
-    <div class="modal fade" id="imageModal2" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel"
-        aria-hidden="true">
+    <div class="modal fade" id="imageModal2" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="imageModalLabel">MetaFront-End</h5>
+                    <h5 class="modal-title" id="imageModalLabel">Meta Front-End</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body text-center">
-                    <img src="img/certificados/Meta-FtontEnd.png"
-                        alt="Certificado de IBM, aptitud Full Stack, Cristian Fernandez" class="img-fluid">
+                    <img src="img/certificados/Meta-FtontEnd.png" alt="Certificado de Meta, aptitud Front-End, Cristian Fernandez" class="img-fluid">
                 </div>
             </div>
         </div>
     </div>
     <!-- Modal de Certificado 3 Google CS-->
-    <div class="modal fade" id="imageModal3" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel"
-        aria-hidden="true">
+    <div class="modal fade" id="imageModal3" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -233,8 +331,7 @@
                     </button>
                 </div>
                 <div class="modal-body text-center">
-                    <img src="img/certificados/Google-CS.png"
-                        alt="Certificado de IBM, aptitud Full Stack, Cristian Fernandez" class="img-fluid">
+                    <img src="img/certificados/Google-CS.png" alt="Certificado de Google, aptitud Ciberseguridad, Cristian Fernandez" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -245,8 +342,7 @@
         <h2 class="text-center">Contacto</h2>
         <div class="row">
             <div class="col-md-12 text-center">
-                <p>Puedes contactarme a través de mi correo: <a
-                        href="mailto:tuemail@example.com">email@mail.com</a></p>
+                <p>Puedes contactarme a través de mi correo: <a href="mailto:tuemail@example.com">email@mail.com</a></p>
             </div>
         </div>
     </section>
@@ -255,8 +351,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="scripts.js"></script>
-
-
 </body>
 
 </html>

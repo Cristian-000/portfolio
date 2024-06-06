@@ -1,11 +1,24 @@
+:root {
+    --primary-color: #8dbff500;
+    --secondary-color: #96acc400;
+    --hover-color: #3597fa6b;
+    --font-color: black;
+    --font-light: rgb(92, 91, 91);
+    --background-color: #f8f9fa;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+    background-color: var(--background-color);
 }
 
 h1, h2 {
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
 }
 
 .card {
@@ -17,28 +30,32 @@ h1, h2 {
 }
 
 .btn-primary {
-    background-color: #8dbff5;
-    border-color: #96acc4;
-    color: black;
+    background-color: var(--primary-color);
+    border-color: var(--secondary-color);
+    color: var(--font-color);
 }
 
-
 .btn-primary:hover {
-    background-color: #3597fa;
-    border-color: #6a9dd3;
+    background-color: var(--hover-color);
+    border-color: var(--secondary-color);
+    color: black;
+}
+.btn-primary:focus {
+    background-color: var(--primary-color); 
+    border: none;
+    color: black;
+
 }
 
 .collapse {
     margin-top: 5px;
 }
-.p-1{
+
+.p-1, .p-2 {
     color: gray;
 }
-.p-2{
-    color: gray;
-    size: 0.6 rem;
-}
-#text-pre{
+
+#text-pre {
     max-width: 800px;
 }
 
@@ -64,7 +81,7 @@ h1, h2 {
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: rgba(0, 123, 255, 0.7);
+    background-color: var(--font-light);
     border: none;
     color: white;
     opacity: 0;
@@ -74,10 +91,18 @@ h1, h2 {
 .img-container:hover .btn-overlay {
     opacity: 1;
 }
-
+.btn-overlay:hover{
+   
+    background-color: black;
+}
 .btn-overlay i {
     font-size: 1.5rem;
 }
-p a{
-    color: #8dbff5;
+
+p a {
+    color: var(--font-light);
+}
+.btn-block {
+    width: 100%;
+    
 }
