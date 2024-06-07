@@ -57,19 +57,30 @@
     <section id="projects" class="container mt-5">
         <h2 class="text-center">Proyectos</h2>
         <div class="row">
-            <!-- Ejemplo de tarjeta de proyecto -->
+
             <div class="col-md-4">
                 <div class="card mb-4 shadow-sm">
                     <div class="card-body">
-                        <h5 class="card-title">Proyecto 1</h5>
+                        <h5 class="card-title"><span id="title-infini">Infini<span id="title-tales">Tales</span></span>
+                        </h5>
+                        <div class="img-container">
+                            <img src="img/proyectos/CUENTOS-WEB.png"
+                                alt="Imagen de proyecto InfiniTales, Cristian Fernandez" />
+                        </div>
+                        <p class="p-1">Proyecto creado con Java Script, HTML y CSS. </p>
+                        <p class="p-1"> Funcionalidades a destacar: Peticiones asincrónicas y manipulacion del DOM. </p>
                         <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#project1"
                             aria-expanded="false" aria-controls="project1">
                             Ver más
                         </button>
                         <div class="collapse" id="project1">
                             <div class="card card-body">
-                                Descripción del proyecto.
-                                <a href="https://github.com/tuusuario/proyecto1" target="_blank">GitHub</a>
+                                <p class="p-2">Su funcionalidad se basa en hacer una peticion a un documento JSON para
+                                    conformar un cuento con secciones de cuentos tomados de forma aleatoria,
+                                    respetando la misma categoría.</p>
+                                <a class="p-1" href="https://github.com/Cristian-000/cuentos-web" target="_blank"><i
+                                        class="fab fa-github"></i>
+                                    GitHub</a>
                             </div>
                         </div>
                     </div>
@@ -330,13 +341,15 @@
                         <div class="card-body position-relative">
                             <h5 class="card-title">CEIBAL, Jóvenes a Programar</h5>
                             <div class="img-container">
-                                <img src="img/certificados/jap-niv1-cert.png" alt="certificado otorgado por CEIBAL, programa Jovenes a programar nivel 1, Vista previa del certificado en PDF"
+                                <img src="img/certificados/jap-niv1-cert.png"
+                                    alt="certificado otorgado por CEIBAL, programa Jovenes a programar nivel 1, Vista previa del certificado en PDF"
                                     width="100%" height="220px" />
                                 <button class="btn btn-primary btn-overlay" data-toggle="modal" data-target="#pdfModal">
                                     <i class="fas fa-search-plus"></i>
                                 </button>
                             </div>
-                            <p class="p-1">Obtenido el 12/2023 duración de un año, otorgado por CEIBAL en su programa de Jóvenes a Programar..</p>
+                            <p class="p-1">Obtenido el 12/2023 duración de un año, otorgado por CEIBAL en su programa de
+                                Jóvenes a Programar..</p>
                             </p>
                             <button class="btn btn-primary" type="button" data-toggle="collapse"
                                 data-target="#data-cert-pdf" aria-expanded="false" aria-controls="data-cert-pdf">
@@ -356,174 +369,172 @@
             </div>
         </div>
     </section>
+    <!-- Sección de Modales para certificados -->
+    <section id="modales">
+        <!-- Modal para visualizar el certificado jap en PDF -->
+        <div class="modal fade" id="pdfModal" tabindex="-1" role="dialog" aria-labelledby="pdfModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="pdfModalLabel">Jóvenes a Programar, nivel 1, CEIBAL</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <iframe src="img/certificados/jap-niv1.pdf" width="100%" height="600px"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal de Certificado meta react native -->
+        <div class="modal fade" id="imageModal4" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel">Meta React Native</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="img/certificados/meta-reactnative.png"
+                            alt="Certificado de Meta, aptitud React Native, Cristian Fernandez" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal de Certificado meta android dev-->
+        <div class="modal fade" id="imageModal5" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel">Meta Desarrollador Android</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="img/certificados/meta-android.png"
+                            alt="Certificado de Meta, aptitud Desarrollador Android, Cristian Fernandez"
+                            class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal de Certificado ibm ia generativa -->
+        <div class="modal fade" id="imageModal6" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel">IBM IA Generativa para Ciberseguridad</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="img/certificados/certificado-adicional-3.png"
+                            alt="Certificado de IBM, aptitud IA Generativa para Ciberseguridad, Cristian Fernandez"
+                            class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal de Certificado scrum master -->
+        <div class="modal fade" id="imageModal7" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel">LearnQuest Scrum Master</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="img/certificados/scrummaster.png"
+                            alt="Certificado de LearnQuest, aptitud Scrum Master, Cristian Fernandez" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal de Certificado 1 IBM fs -->
+        <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel">Certificado IBM Full Stack</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="img/certificados/IBM-FullStack.png"
+                            alt="Certificado de IBM, aptitud Full Stack, Cristian Fernandez" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal de Certificado 2 Meta fe-->
+        <div class="modal fade" id="imageModal2" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel">Meta Front-End</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="img/certificados/Meta-FtontEnd.png"
+                            alt="Certificado de Meta, aptitud Front-End, Cristian Fernandez" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal de Certificado 3 Google CS-->
+        <div class="modal fade" id="imageModal3" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel">Google Ciberseguridad</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="img/certificados/Google-CS.png"
+                            alt="Certificado de Google, aptitud Ciberseguridad, Cristian Fernandez" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Modal para visualizar el certificado jap en PDF -->
-    <div class="modal fade" id="pdfModal" tabindex="-1" role="dialog" aria-labelledby="pdfModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="pdfModalLabel">Jóvenes a Programar, nivel 1, CEIBAL</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body text-center">
-                    <iframe src="img/certificados/jap-niv1.pdf" width="100%" height="600px"></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal de Certificado meta react native -->
-    <div class="modal fade" id="imageModal4" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="imageModalLabel">Meta React Native</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body text-center">
-                    <img src="img/certificados/meta-reactnative.png"
-                        alt="Certificado de Meta, aptitud React Native, Cristian Fernandez" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal de Certificado meta android dev-->
-    <div class="modal fade" id="imageModal5" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="imageModalLabel">Meta Desarrollador Android</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body text-center">
-                    <img src="img/certificados/meta-android.png"
-                        alt="Certificado de Meta, aptitud Desarrollador Android, Cristian Fernandez" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal de Certificado ibm ia generativa -->
-    <div class="modal fade" id="imageModal6" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="imageModalLabel">IBM IA Generativa para Ciberseguridad</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body text-center">
-                    <img src="img/certificados/certificado-adicional-3.png"
-                        alt="Certificado de IBM, aptitud IA Generativa para Ciberseguridad, Cristian Fernandez"
-                        class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal de Certificado scrum master -->
-    <div class="modal fade" id="imageModal7" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="imageModalLabel">LearnQuest Scrum Master</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body text-center">
-                    <img src="img/certificados/scrummaster.png"
-                        alt="Certificado de LearnQuest, aptitud Scrum Master, Cristian Fernandez" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Modal de Imagen -->
-    <!-- Modal de Certificado 1 IBM fs -->
-    <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="imageModalLabel">Certificado IBM Full Stack</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body text-center">
-                    <img src="img/certificados/IBM-FullStack.png"
-                        alt="Certificado de IBM, aptitud Full Stack, Cristian Fernandez" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal de Certificado 2 Meta fe-->
-    <div class="modal fade" id="imageModal2" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="imageModalLabel">Meta Front-End</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body text-center">
-                    <img src="img/certificados/Meta-FtontEnd.png"
-                        alt="Certificado de Meta, aptitud Front-End, Cristian Fernandez" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal de Certificado 3 Google CS-->
-    <div class="modal fade" id="imageModal3" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="imageModalLabel">Google Ciberseguridad</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body text-center">
-                    <img src="img/certificados/Google-CS.png"
-                        alt="Certificado de Google, aptitud Ciberseguridad, Cristian Fernandez" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Sección de Contacto -->
     <section id="contact" class="container mt-5">
         <footer class="footer">
             <div class="container">
-              <p>Creado por Cristian Fernandez, desarrollador WEB</p>
-              <p>
-                <a href="https://www.linkedin.com/in/cristian-fernández-595329283" target="_blank">
-                  <i class="fab fa-linkedin"></i> LinkedIn
-                </a>
-                |
-                <a href="mailto:cuentaempresarial480@gmail.com">
-                  <i class="fas fa-envelope"></i> Gmail
-                </a>
-              </p>
+                <p>Creado por Cristian Fernandez, desarrollador WEB</p>
+                <p>
+                    <a href="https://www.linkedin.com/in/cristian-fernández-595329283" target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    |
+                    <a href="mailto:cuentaempresarial480@gmail.com">
+                        <i class="fas fa-envelope"></i> Gmail
+                    </a>
+                </p>
             </div>
-          </footer>
+        </footer>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
