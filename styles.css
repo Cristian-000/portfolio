@@ -55,10 +55,6 @@ h1, h2 {
     color: gray;
 }
 
-#text-pre {
-    max-width: 800px;
-}
-
 .modal-body img {
     max-width: 90%;
     height: auto;
@@ -92,7 +88,7 @@ h1, h2 {
     opacity: 1;
 }
 .btn-overlay:hover{
-   
+   color:white;
     background-color: black;
 }
 .btn-overlay i {
