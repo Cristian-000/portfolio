@@ -1,7 +1,7 @@
 :root {
     --primary-color: #8dbff500;
     --secondary-color: #96acc400;
-    --hover-color: #3597fa6b;
+    --hover-color: rgb(92, 91, 91);
     --font-color: black;
     --font-light: rgb(92, 91, 91);
     --background-color: #f8f9fa;
@@ -38,14 +38,18 @@ h1, h2 {
 .btn-primary:hover {
     background-color: var(--hover-color);
     border-color: var(--secondary-color);
-    color: black;
+    color: rgb(255, 255, 255);
 }
-.btn-primary:focus {
-    background-color: var(--primary-color); 
-    border: none;
-    color: black;
 
+/*  específicos para asegurarse de eliminar los estilos predeterminados */
+.btn-primary:focus, .btn-primary:active, .btn-primary.focus, .btn-primary.active {
+    background-color: var(--primary-color) !important;
+    border-color: var(--secondary-color) !important;
+    color: var(--font-color) !important;
+    box-shadow: none !important; 
+    outline: none !important; 
 }
+
 
 .collapse {
     margin-top: 5px;
@@ -65,6 +69,7 @@ h1, h2 {
     width: 100%;
     height: 220px;
     overflow: hidden;
+    margin-bottom: 1rem;
 }
 
 .img-container img {
@@ -87,18 +92,25 @@ h1, h2 {
 .img-container:hover .btn-overlay {
     opacity: 1;
 }
-.btn-overlay:hover{
-   color:white;
+
+.btn-overlay:hover {
+    color: white;
     background-color: black;
 }
+
 .btn-overlay i {
     font-size: 1.5rem;
 }
 
 p a {
     color: var(--font-light);
+    text-decoration: none;
 }
+
+p a:hover {
+    color: var(--font-color);
+}
+
 .btn-block {
     width: 100%;
-    
 }
