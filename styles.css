@@ -58,8 +58,14 @@ h1, h2 {
     margin-top: 5px;
 }
 
-.p-1, .p-2 {
+.p-1, .p-2,.container p a{
     color: gray;
+}
+.p-1f a:hover{
+    color: black;
+}
+.p-1f{
+    margin-bottom: 1rem;
 }
 
 .modal-body img {
