@@ -23,7 +23,8 @@ h1, h2 {
 
 .navbar-brand img {
     margin-right: 10px;
-   
+    height: 1.9rem;
+    width: auto;
 }
 
 #navbarNav a{
@@ -31,8 +32,8 @@ h1, h2 {
 }
 #navbar-brandA {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 400;
-    font-size: 1.38rem;
+    font-weight: 300;
+    font-size: 1.4rem;
     
 }
 .card {
