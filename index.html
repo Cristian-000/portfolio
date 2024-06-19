@@ -104,9 +104,13 @@
                     <div class="card-body">
                         <h5 class="card-title">Web para Inmobiliarias</h5>
                         <div class="img-container">
-                            <img src="img/proyectos/CUENTOS-WEB.png"
-                                alt="Imagen de proyecto InfiniTales, Cristian Fernandez" />
+                            <img src="img/proyectos/proyecto-inmo.png"
+                                alt="Imagen de proyecto basico de inmobiliaria, Cristian Fernandez" />
+                                <button class="btn btn-primary btn-overlay" data-toggle="modal" data-target="#imageModalInmo">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
                         </div>
+                        
                         <p class="p-1">Proyecto creado con MERN Stack: MongoDB, Express, React y NodeJs. </p>
                         <p class="p-1"> Funcionalidades a destacar: Carga y presentación dinámica de datos clasificados desde una base de datos con 
                             posibilidad de busqueda filtrando los resultados en tiempo real.   </p>
@@ -117,11 +121,11 @@
 
                         </div>
 
-                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#project1"
-                            aria-expanded="false" aria-controls="project1">
+                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#project2"
+                            aria-expanded="false" aria-controls="project2">
                             Ver más
                         </button>
-                        <div class="collapse" id="project1">
+                        <div class="collapse" id="project2">
                             <div class="card card-body">
                                 <p class="p-2">Su funcionalidad se basa en hacer una peticion al servidor mediante puntos de acceso con Express, el cual se conecta con una base de datos de MongoDB y presenta los 
                                     resultados dinamicamente mediante componentes de React. También se emplea React Router Dom para la paginación.</p>
@@ -413,8 +417,26 @@
             </div>
         </div>
     </section>
-    <!-- Sección de Modales para certificados -->
+    <!-- Sección de Modales para certificados y proyectos -->
     <section id="modales">
+         <!-- Modal de Cproyecto inmobiliaria -->
+         <div class="modal fade" id="imageModalInmo" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel"
+         aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+             <div class="modal-content">
+                 <div class="modal-header">
+                     <h5 class="modal-title" id="imageModalLabel">Proyecto funcionando con MERN Stack.</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                         <span aria-hidden="true">&times;</span>
+                     </button>
+                 </div>
+                 <div class="modal-body text-center">
+                     <img src="img/proyectos/proyecto-inmo.png"
+                         alt="Imagen de proyecto basico de inmobiliaria, Cristian Fernandez" class="img-fluid">
+                 </div>
+             </div>
+         </div>
+     </div>
         <!-- Modal para visualizar el certificado jap en PDF -->
         <div class="modal fade" id="pdfModal" tabindex="-1" role="dialog" aria-labelledby="pdfModalLabel"
             aria-hidden="true">
