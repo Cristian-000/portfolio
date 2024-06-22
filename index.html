@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="skills.css">
 </head>
 
 <body>
@@ -33,6 +34,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#certificates">Certificados</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Conocimientos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contacto</a>
@@ -130,6 +134,46 @@
                                 <p class="p-2">Su funcionalidad se basa en hacer una peticion al servidor mediante puntos de acceso con Express, el cual se conecta con una base de datos de MongoDB y presenta los 
                                     resultados dinamicamente mediante componentes de React. También se emplea React Router Dom para la paginación.</p>
 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Proyecto e-commerce jap-2023-->
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">E-Commerce<a class="p-1" href="https://jovenesaprogramar.edu.uy/" target="_blank">JaP</a> </p></h5>
+                        <div class="img-container">
+                            <img src="img/proyectos/proyecto-e-commerce.png"
+                                alt="Imagen de proyecto e-commerce para programa Jovenes a programar de CEIBAL, Cristian Fernandez" />
+                                <button class="btn btn-primary btn-overlay" data-toggle="modal" data-target="#imageModale-com">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                        </div>
+                        
+                        <p class="p-1">Proyecto creado en equipo para el programa de  <a class="p-1" href="https://jovenesaprogramar.edu.uy/" target="_blank">Jóvenes a Programar 2023</a> </p>
+                        <p class="p-1"> Funcionalidades a destacar: Login, carga de datos para mostrar las categorías y productos, función de filtrado, carrito de compras entre otras.  </p>
+                        <div class="p-1f">
+                            <a class="p-1" href="https://cristian-000.github.io/E-comerce-Jap-2023/index.html" target="_blank">
+                                <i class="fas fa-globe"></i>
+                                Página Web</a>
+                            |
+                            <a class="p-1" href="https://github.com/Cristian-000/E-comerce-Jap-2023" target="_blank"><i
+                                    class="fab fa-github"></i>
+                            GitHub</a>|
+                            <a class="p-1" href="https://github.com/estebanbent4/E-comerce-Jap" target="_blank">Repositorio original</a>
+                        </div>
+
+                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#project3"
+                            aria-expanded="false" aria-controls="project2">
+                            Ver más
+                        </button>
+                        <div class="collapse" id="project3">
+                            <div class="card card-body">
+                                <p class="p-2">Trabajo realizado en equipo de cinco estudiantes, utilizando gestionado de versiones (GitHub). Creamos el login con datos persistentes en LocalStorage, así mismo el Carrito de compras y una pseudo Pasarela de pagos, sección de Perfil de usuario, Navbar responsive y la mayoría de estilos entre otros.. </p>
+                                    <p class="p-2"><i class="fab fa-youtube"></i>
+                                        <a class="p-1" href="https://www.youtube.com/watch?v=otAvooTuU-M" target="_blank">Aquí</a> mi explicación técnica del carrito.</p>
                             </div>
                         </div>
                     </div>
@@ -419,7 +463,25 @@
     </section>
     <!-- Sección de Modales para certificados y proyectos -->
     <section id="modales">
-         <!-- Modal de Cproyecto inmobiliaria -->
+         <!-- Modal de proyecto e-commerce -->
+         <div class="modal fade" id="imageModale-com" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel"
+         aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+             <div class="modal-content">
+                 <div class="modal-header">
+                     <h5 class="modal-title" id="imageModalLabel">Proyecto de e-commerce.</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                         <span aria-hidden="true">&times;</span>
+                     </button>
+                 </div>
+                 <div class="modal-body text-center">
+                     <img src="img/proyectos/proyecto-e-commerce.png"
+                         alt="Imagen de proyecto e-commerce para el curso de Jovenes a Programar 2023, Cristian Fernandez" class="img-fluid">
+                 </div>
+             </div>
+         </div>
+     </div>
+         <!-- Modal de proyecto inmobiliaria -->
          <div class="modal fade" id="imageModalInmo" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel"
          aria-hidden="true">
          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -584,6 +646,110 @@
         </div>
     </section>
 
+ <!-- Sección de Conocimientos -->
+ <section id="skills" class="skills-section">
+    <div class="container">
+        <h2>Conocimientos</h2>
+        
+        <!-- Lenguajes de Programación -->
+        <div class="skill-card">
+            <h3>Lenguajes de Programación - Frameworks y Librerías</h3>
+            <div class="skill-content">
+                <div class="skill-item">
+                    <div class="skill-name">JavaScript</div>
+                    <div class="skill-bar">
+                        <span class="skill-level level-90">90%</span>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">HTML</div>
+                    <div class="skill-bar">
+                        <span class="skill-level level-90">90%</span>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">CSS</div>
+                    <div class="skill-bar">
+                        <span class="skill-level level-80">80%</span>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">React</div>
+                    <div class="skill-bar">
+                        <span class="skill-level level-80">80%</span>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">Node.js</div>
+                    <div class="skill-bar">
+                        <span class="skill-level level-70">70%</span>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">Express</div>
+                    <div class="skill-bar">
+                        <span class="skill-level level-70">70%</span>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">MongoDB</div>
+                    <div class="skill-bar">
+                        <span class="skill-level level-70">70%</span>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">Kotlin</div>
+                    <div class="skill-bar">
+                        <span class="skill-level level-70">70%</span>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">Python</div>
+                    <div class="skill-bar">
+                        <span class="skill-level level-60">60%</span>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">C#</div>
+                    <div class="skill-bar">
+                        <span class="skill-level level-60">60%</span>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">Docker</div>
+                    <div class="skill-bar">
+                        <span class="skill-level level-50">50%</span>
+                    </div>
+                </div>
+                
+              
+            </div>
+        </div>
+       
+
+        <!-- Otras Herramientas -->
+        <div class="skill-card">
+            <h3>Otras Herramientas</h3>
+            <ul class="skill-list">
+                <li><i class="fas fa-code-branch"></i> Gestión de Versiones (Git, GitHub)</li>
+                <li><i class="fab fa-trello"></i> Trello</li>
+                <li><i class="fab fa-figma"></i> Figma</li>
+                <li><i class="fab fa-adobe"></i> Adobe Photoshop</li>
+                <li><i class="fab fa-google-drive"></i> Google Drive</li>
+            </ul>
+        </div>
+         
+        <!-- Idiomas -->
+        <div class="skill-card">
+            <h3>Idiomas</h3>
+            <ul class="skill-list">
+                <li>Español - Nativo</li>
+                <li>Inglés - Medio B2</li>
+                <li>Portugués - Medio</li>
+            </ul>
+        </div>
+    </div>
+</section>
 
     <!-- Sección de Contacto -->
     <section id="contact" class="container mt-5">
