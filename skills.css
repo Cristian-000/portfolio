@@ -1,10 +1,5 @@
 
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: var(--background-color);
-}
-
 .skills-section {
     padding: 50px 0;
     background-color: var(--background-color);
@@ -89,7 +84,7 @@ body {
 
 .skill-list li i {
     margin-right: 10px;
-    color: var(--primary-color);
+    color: black;
 }
 
 @media (max-width: 768px) {
